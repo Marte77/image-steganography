@@ -159,7 +159,7 @@ def obterStringDaImagem(imgpath:str):
             dadosbinarios += g[-1] 
             dadosbinarios += b[-1]
     dadosbinarios = [dadosbinarios[i:i+8] for i in range(0,len(dadosbinarios),8)] 
-    #a var dadosbinarios agr é um array onde cada index contem um caracter da string final em binario
+    #a var dadosbinarios agr é um array onde cada index contem um bit dum caracter da string final em binario
     #por isso converter os bits em char
     stringfinal = ""
     for byte in dadosbinarios:
